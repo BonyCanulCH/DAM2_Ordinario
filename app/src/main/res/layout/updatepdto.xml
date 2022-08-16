@@ -1,6 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#171616">
+
+    <TextView
+        android:id="@+id/textID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Actualización de Productos: "
+        android:textSize="20dp"
+        android:textColor="#FFF"/>
+
+    <EditText
+        android:id="@+id/edtId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="ID Producto"
+        android:inputType="text"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/textID"
+        android:textColor="#FFF"
+        android:textColorHint="#0FE618"/>
+
+    <EditText
+        android:id="@+id/edtNom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="Ingresa el nombre del Producto"
+        android:inputType="text"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/edtId"
+        android:textColor="#FFF"
+        android:textColorHint="#0FE618"/>
+
+    <EditText
+        android:id="@+id/edtCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="Precio"
+        android:layout_marginTop="7dp"
+        android:layout_below="@id/edtNom"
+        android:inputType="number"
+        android:textColor="#FFF"
+        android:textColorHint="#0FE618"
+        />
+
+    <EditText
+        android:id="@+id/edtUnit"
+        android:inputType="number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/edtCost"
+        android:hint="Cantidad (Unidades)"
+        android:layout_marginTop="7dp"
+        android:textColor="#FFF"
+        android:textColorHint="#0FE618"/>
 
 </RelativeLayout>

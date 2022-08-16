@@ -4,6 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#6EEFFF"
     tools:context=".ventas">
+
+    <TextView
+        android:layout_marginTop="12dp"
+        android:id="@+id/titleVta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Registros en BD"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:fontFamily="sans-serif-condensed"
+        />
+
+    <TextView
+        android:id="@+id/impRows"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/titleVta"
+        android:text="Vacío"/>
+
+    <Button
+        android:id="@+id/btQuery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/impRows"
+        android:layout_marginTop="10dp"
+        android:text="Consultar BD"/>
 
 </RelativeLayout>
