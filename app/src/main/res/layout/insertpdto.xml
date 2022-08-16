@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222020">
+
+    <TextView
+        android:id="@+id/nameP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Producto: "
+        android:textColor="#FFF"/>
+
+    <EditText
+        android:id="@+id/edtNom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="Ingresa el nombre del Producto"
+        android:inputType="text"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/nameP"
+        android:textColor="#FFF"
+        android:textColorHint="#0FE618"/>
+
+    <EditText
+        android:id="@+id/edtCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="Precio"
+        android:layout_marginTop="7dp"
+        android:layout_below="@id/edtNom"
+        android:inputType="number"
+        android:textColor="#FFF"
+        android:textColorHint="#0FE618"
+        />
+
+    <EditText
+        android:id="@+id/edtUnit"
+        android:inputType="number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/edtCost"
+        android:hint="Cantidad (Unidades)"
+        android:layout_marginTop="7dp"
+        android:textColor="#FFF"
+        android:textColorHint="#0FE618"/>
+
+    <EditText
+        android:id="@+id/edtImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtUnit"
+        android:inputType="text"
+        android:hint="Nombre de la Imagen"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:textColor="#FFF"
+        android:textColorHint="#0FE618"/>
+
+    <EditText
+        android:id="@+id/edtDate"
+        android:inputType="datetime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Fecha de Alta (DD/MM/AAAA)"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/edtImg"
+        android:layout_marginTop="7dp"
+        android:textColor="#FFF"
+        android:textColorHint="#0FE618"/>
+
+</RelativeLayout>
