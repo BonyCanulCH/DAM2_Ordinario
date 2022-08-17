@@ -37,4 +37,12 @@
         android:layout_marginTop="10dp"
         android:text="Consultar BD"/>
 
+    <Button
+        android:id="@+id/returnBt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btQuery"
+        android:layout_centerHorizontal="true"
+        android:text="Regresar al Menú Principal"/>
+
 </RelativeLayout>

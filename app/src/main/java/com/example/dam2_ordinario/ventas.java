@@ -2,6 +2,7 @@ package com.example.dam2_ordinario;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -11,7 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class ventas extends AppCompatActivity {
-    Button revisarBD;
+    Button revisarBD, regresar2;
     TextView mostrarInfo;
 
     @Override
@@ -19,12 +20,20 @@ public class ventas extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ventas);
         revisarBD = (Button) findViewById(R.id.btQuery);
+        regresar2 = (Button) findViewById(R.id.returnBt2);
         mostrarInfo = (TextView) findViewById(R.id.impRows);
 
         revisarBD.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 searchData();
+            }
+        });
+
+        regresar2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),MainActivity.class);
             }
         });
     }

@@ -15,7 +15,7 @@ import android.widget.Toast;
 
 public class inventario extends AppCompatActivity {
     EditText nombreP, precioP, imgName, cantP;
-    Button saveP, actP, elimP;
+    Button saveP, actP, elimP, regresar1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +24,7 @@ public class inventario extends AppCompatActivity {
         saveP = (Button) findViewById(R.id.btInsert);
         actP = (Button) findViewById(R.id.btUpdate);
         elimP = (Button) findViewById(R.id.btDelete);
+        regresar1 = (Button) findViewById(R.id.returnBt);
         nombreP = (EditText) findViewById(R.id.edtNom);
         precioP = (EditText) findViewById(R.id.edtCost);
         imgName = (EditText) findViewById(R.id.edtImg);
@@ -88,6 +89,7 @@ public class inventario extends AppCompatActivity {
 
             }
         });
+
         actP.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -113,6 +115,12 @@ public class inventario extends AppCompatActivity {
                 });
                 AlertDialog dialog = alert.create();
                 dialog.show();
+            }
+        });
+        regresar1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),MainActivity.class);
             }
         });
     }
